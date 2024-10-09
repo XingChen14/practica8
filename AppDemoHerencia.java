@@ -34,14 +34,10 @@ public class AppDemoHerencia {
 
         // Mostrar lista de smartphones
         System.out.println("Lista de Smartphones:");
-        for (Smartphone smartphone : listaDeSmartphones) {
-            System.out.println(smartphone);
-        }
+        listaDeSmartphones.forEach(smartphone -> System.out.println(smartphone.toString()));
 
         // Mostrar lista de televisores
         System.out.println("\nLista de Televisiones:");
-        for (Television television : listaDeTVs) {
-            System.out.println(television);
-        }
+        listaDeTVs.forEach(television -> System.out.println(television.toString()));
     }
 }
